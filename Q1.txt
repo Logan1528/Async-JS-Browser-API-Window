@@ -1,0 +1,39 @@
+Q1.Define XMLHttpRequest object, and How is it used in AJAX?
+
+Define XMLHttpRequest object
+
+	The XMLHttpRequest object is a JavaScript API that provides functionality 
+for making asynchronous HTTP requests from a web page. It allows the web page to 
+communicate with a server in the background without interfering with the user's 
+experience. XMLHttpRequest is commonly used in AJAX (Asynchronous JavaScript and XML)
+ to update parts of a web page dynamically without requiring a full page reload.
+
+Here's a brief overview of how it's used in AJAX:
+
+1. **Create an instance**: First, you create an instance of the XMLHttpRequest 
+object in your JavaScript code.
+
+2. **Open a connection**: You use the `open()` method of the XMLHttpRequest 
+object to specify the type of request (e.g., GET, POST) and the URL of the 
+server-side script or resource you want to communicate with.
+
+3. **Set up event handlers**: You typically set up event handlers to handle 
+various stages of the request, such as when the request completes successfully
+ (`onload`), encounters an error (`onerror`), or progresses (`onprogress`).
+
+4. **Send the request**: You use the `send()` method of the XMLHttpRequest 
+object to send the request to the server.
+
+5. **Handle the response**: When the server responds to the request, the `onload`
+ event handler (or other appropriate event handler) is triggered, and you can 
+access the response data from the `responseText` or `responseXML` properties of
+ the XMLHttpRequest object. You then typically update the relevant parts of the
+ web page with the received data.
+
+6. **Optional: Abort the request**: You can also abort an ongoing request using 
+the `abort()` method of the XMLHttpRequest object if needed.
+
+Overall, XMLHttpRequest enables asynchronous communication between a web page and 
+a server, facilitating the dynamic updating of web content without requiring a 
+full page reload.
+

@@ -1,0 +1,44 @@
+Q4.Compare Promises to callbacks and discuss why Promises are preferred for 
+managing asynchronous code.
+
+Promises and callbacks are both mechanisms for managing asynchronous code in JavaScript,
+ but they have different approaches and characteristics. Let's compare them:
+
+1. **Callback Functions:**
+   - Callbacks are functions that are passed as arguments to another function and are 
+	executed once the asynchronous operation is completed.
+   - They were the traditional way of handling asynchronous code in JavaScript, especially 
+	in older versions of the language.
+   - Callbacks can lead to "callback hell" or "pyramid of doom" where nested callbacks make
+	 the code hard to read and maintain.
+   - Error handling in callbacks can be cumbersome, often leading to repetitive error 
+	handling code within each callback.
+
+2. **Promises:**
+   - Promises represent the eventual completion or failure of an asynchronous operation and
+	 allow chaining of asynchronous operations.
+   - Promises provide a more structured and cleaner way to handle asynchronous code compared
+	 to callbacks.
+   - They allow better error handling through chaining `.then()` and `.catch()` methods, 
+	which make error propagation and handling more straightforward.
+   - Promises support transformation and composition of asynchronous operations through 
+	methods like `Promise.all`, `Promise.race`, and `Promise.allSettled`.
+   - With ES6, Promises became a standard feature of JavaScript, making them widely 
+	supported across modern browsers and environments.
+
+**Why Promises are Preferred:**
+   - **Readability:** Promises offer cleaner, more readable code compared to nested 
+	callbacks, reducing the risk of callback hell.
+   - **Error Handling:** Promises provide built-in error handling mechanisms, making 
+	it easier to manage errors and avoid repetitive error handling code.
+   - **Chaining:** Promises support chaining of asynchronous operations, allowing for 
+	a more sequential and organized flow of code.
+   - **Composition:** Promises facilitate composition of asynchronous operations, 
+	enabling developers to build complex asynchronous workflows more easily.
+   - **Standardization:** Promises are a standardized feature of JavaScript, making 
+	them a more consistent and widely supported choice for managing asynchronous code.
+
+Overall, Promises provide a more elegant and structured way to handle asynchronous 
+code compared to callbacks, making them the preferred choice for modern JavaScript 
+development.
+
